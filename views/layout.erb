@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link href="/styles-layout.css" rel="stylesheet" media="all" />
+<title>Cheerful Dictionary</title>
+
+</head>
+<body>
+
+<div class="bd-example">
+      <!-- text -->
+
+  <nav class="nav">
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar">
+      <li class="nav-item">
+        <a class="nav-link" href="/"> Cheerful Dictionary </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/game"> Играть </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_words"> Добавить слово </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_translation"> Добавить перевод </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="edit_the_words"> Редактировать </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/remove_the_word"> Удалить </a>
+    </ul>
+  </div>
+</nav>
+      <div>
+        <%if @error then %>
+            <div class="alert alert-danger" role="alert"><%= @error %></div>
+        <% end %>
+        <% if block_given? %>
+          <%= yield %>
+        <% end %>
+      </div>
+    </div>
+</body>
+</html>
