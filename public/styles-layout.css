@@ -1,0 +1,45 @@
+/* Show it is fixed to the top */
+body {
+  width: 100%;
+  font-family: Arial;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+}
+.navbar li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  float: left;
+}
+.navbar a {
+  display: block;
+  border-bottom: none;
+  padding: 10px;
+  margin-right: 0px;
+  background-color: #EAEAEA;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  color: black;
+}
+ul.navbar {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.name-page {
+
+  width: 50%;
+}
+
+.w-25 {
+  width: 50%;
+}
