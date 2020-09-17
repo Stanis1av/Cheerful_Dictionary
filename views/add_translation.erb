@@ -1,0 +1,20 @@
+<div class="w-50 p-3">
+  <h2 class="name-page">Добавьте перевод к уже имеющимся в базе словам</h2>
+  <br>
+  <div class="form-group">
+    <form action="/add_translation" method="POST">
+      <label>Введите слово или предложение которое вы хотите отредактировать</label>
+      <div class="form-group">
+        <input type="text" name="words_rus" class="form-control" placeholder="Введите слово (rus)" value="<%= @words_rus %>">
+      </div>
+    </br>
+    <label>Введите исправленный вариант слова или предложения на английском.</label>
+      <div class="form-group">
+        <input type="text" name="words_en" class="form-control" placeholder="Введите слово (en)" value="<%= @words_en %>">
+      </div>
+    </br>
+      <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+  </form>
+</div>
+</div>
