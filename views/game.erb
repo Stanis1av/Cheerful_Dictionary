@@ -1,0 +1,13 @@
+<div class="w-50 p-3">
+
+<h2 class="name-page">Проверь свои знания</h2>
+
+<form action="/game" method="POST">
+  <div class="form-group">
+    <label>Введите перевод слова: <%= rand_word %></label><br/>
+    <input name="answer" type="text" class="form-control" placeholder="Введите перевод (en)" value="<%= @answer %>">
+  </div>
+  <br/>
+  <button type="submit" class="btn btn-primary">Ответить</button>
+</form>
+</div>
