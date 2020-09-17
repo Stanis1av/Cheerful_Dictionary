@@ -1,0 +1,21 @@
+<div class="w-50 p-3">
+  <h2 class="name-page">Добавить слова или устойчивые выражения в базу</h2>
+  <br>
+<div class="form-group">
+  <from action="/add_words" method="POST">
+    <label>Введите слово или предложение на русском.</label>
+    <div class="form-group">
+      <input name="words_rus" type="text" class="form-control" placeholder="Введите слово (rus)" value="<%= @words_rus %>">
+    </div>
+  </br>
+    <label>Введите перевод слова или предложения на английском.</label>
+    <div class="form-group">
+      <input name="words_en" type="text" class="form-control" placeholder="Введите перевод (en)" value="<%= @words_en %>">
+    </div>
+  </br>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+  </form>
+</div>
+
+</div>
+
